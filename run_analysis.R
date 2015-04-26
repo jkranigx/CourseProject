@@ -77,5 +77,7 @@ run_analysis = function() {
     tidyData <- ddply(meltedData,c("SubjectId","ActivityLabel","variable"),
                       summarise,mean=mean(value))
   
+    write.table(tidyData,file="smart_phone_data.txt", row.name=FALSE)
+    
     return(tidyData)
 }
