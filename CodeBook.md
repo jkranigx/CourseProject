@@ -21,8 +21,33 @@ are: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING,
 and LAYING.
  
 variable - The name of the summarized variable. Each variable represents a type of 
-reading taken from one of the phone's sensors. For more specific details on
+numerical reading taken from one of the phone's sensors: 
+
+1. Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+
+tBodyAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+
+2. Triaxial Angular velocity from the gyroscope.
+
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyGyro-XYZ
+fBodyGyroMag
+fBodyGyroJerkMag
+
+For more specific details on
 individual reading data see 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-mean - The mean value for each one of the variables described above.
+mean - The mean value for each one of the sensor reading variables described above. The 
+units are the same as the units the sensor reading is given in. 
